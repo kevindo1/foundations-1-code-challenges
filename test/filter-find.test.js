@@ -6,7 +6,7 @@ import {
     listNamesOfAllFruits
 } from '../filter-find.js';
 
-const { test, skip } = QUnit;
+const { test } = QUnit;
 
 const groceries = [
     { 
@@ -41,7 +41,7 @@ const groceries = [
     },
 ];
 
-skip('should return all dairy', (expect) => {
+test('should return all dairy', (expect) => {
     //Arrange
     // Set up your arguments and expectations
     const expected = [{ 
@@ -68,7 +68,7 @@ skip('should return all dairy', (expect) => {
 });
 
 
-skip('should return all fruits that cost more than 2', (expect) => {
+test('should return all fruits that cost more than 2', (expect) => {
     //Arrange
     // Set up your arguments and expectations
     const expected = [{ 
