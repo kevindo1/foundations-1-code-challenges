@@ -67,7 +67,11 @@ Output:
 */
 
 export function makeStringArray(arr) {
-    return [];
+    let string = [];
+    arr.map(pet =>
+    string.push(`${pet.name}${pet.type}`));
+
+    return string;
 }
 
 /*
@@ -93,5 +97,6 @@ Output:
 */
 
 export function makeArrayOfArraysOfArrays(arr) {
-    return [];
+    
+    return arr.map(item => ([['name', item.name], ['type', item.type]]));
 }
