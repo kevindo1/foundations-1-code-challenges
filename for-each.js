@@ -17,7 +17,12 @@ Output:
 */
 
 export function makeArrayOfNames(arr) {
-    return [];
+    let petsArray = [];
+
+    arr.forEach(pet => {
+        petsArray.push(pet.name)
+    });
+    return petsArray;
 }
 
 /*
@@ -27,7 +32,8 @@ Output:
 */
 
 export function makeReversedArrayOfTypes(arr) {
-    return [];
+    
+    return ;
 }
 
 /*

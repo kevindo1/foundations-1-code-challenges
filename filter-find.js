@@ -90,7 +90,7 @@ Output:
 
 export function findTheCheese(arr) {
     const grocery = arr.find(groceries => groceries.id === 'cheese')
-    
+
     return grocery;
 }
 
@@ -101,5 +101,8 @@ Output:
 */
 
 export function listNamesOfAllFruits(arr) {
-    return [];
+    const fruits = arr.filter(groceries => groceries.category === 'fruit')
+    const grocery = fruits.map(names => names.id)
+
+    return grocery;
 }
