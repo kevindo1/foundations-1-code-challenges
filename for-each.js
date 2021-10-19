@@ -58,7 +58,7 @@ export function makeSpanishLanguageArray(arr) {
         // let name = `nombre:${pet.name}`, 
         // let type = petsArray.type; 
 
-        petsArray.push({nombre: `${ pet.name }`, tipo: `${ pet.type }`});
+        petsArray.push({ nombre: `${ pet.name }`, tipo: `${ pet.type }` });
     });
     
     return petsArray;
